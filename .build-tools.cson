@@ -1,0 +1,92 @@
+providers: [
+  {
+    key: "bt"
+    config:
+      commands: [
+        {
+          project: "D:\\source\\repos\\internal_hvh"
+          source: "D:\\source\\repos\\internal_hvh\\.build-tools.cson"
+          name: "Release"
+          command: "build_release.bat"
+          wd: "."
+          env: {}
+          modifier:
+            save_all: {}
+          environment:
+            name: "child_process"
+            config:
+              stdoe: "both"
+          stdout:
+            pipeline: []
+          stderr:
+            pipeline: []
+          output:
+            console:
+              close_success: true
+              queue_in_buffer: true
+              colors: true
+              stdin: true
+            linter:
+              no_trace: false
+              immediate: false
+          version: 2
+        }
+        {
+          project: "D:\\source\\repos\\internal_hvh"
+          source: "D:\\source\\repos\\internal_hvh\\.build-tools.cson"
+          name: "Release Symbols"
+          command: "build_releasesym.bat"
+          wd: "."
+          env: {}
+          modifier:
+            save_all: {}
+          environment:
+            name: "child_process"
+            config:
+              stdoe: "both"
+          stdout:
+            pipeline: []
+          stderr:
+            pipeline: []
+          output:
+            console:
+              close_success: true
+              queue_in_buffer: true
+              colors: true
+              stdin: true
+            linter:
+              no_trace: false
+              immediate: false
+          version: 2
+        }
+        {
+          project: "D:\\source\\repos\\internal_hvh"
+          source: "D:\\source\\repos\\internal_hvh\\.build-tools.cson"
+          name: "Debug"
+          command: "build_debug.bat"
+          wd: "."
+          env: {}
+          modifier:
+            save_all: {}
+          environment:
+            name: "child_process"
+            config:
+              stdoe: "both"
+          stdout:
+            pipeline: []
+          stderr:
+            pipeline: []
+          output:
+            console:
+              close_success: true
+              queue_in_buffer: true
+              colors: true
+              stdin: true
+            linter:
+              no_trace: false
+              immediate: false
+          version: 2
+        }
+      ]
+  }
+]
